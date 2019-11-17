@@ -56,7 +56,7 @@ def main():
         ('all files','*.*')))
 
         output = identifyFaces(img_path,True)
-        #make json file path
+        #make JSON file path
         json_path = ('').join(img_path.split('.')[:-1]) + '.json'
         answer = input('Save result to {}? yes/no: '.format(os.path.basename(json_path)))
         if answer.lower() in ('y','yes'):
